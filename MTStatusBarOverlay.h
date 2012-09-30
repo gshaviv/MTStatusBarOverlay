@@ -115,7 +115,7 @@ typedef enum MTMessageType {
 // the text displayed in the detailView (alternative to history)
 @property (nonatomic, copy) NSString *detailText;
 // the delegate of the overlay
-@property (nonatomic, unsafe_unretained) id<MTStatusBarOverlayDelegate> delegate;
+@property (nonatomic, weak) id<MTStatusBarOverlayDelegate> delegate;
 
 
 //===========================================================

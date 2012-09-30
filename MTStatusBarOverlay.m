@@ -171,8 +171,8 @@ kDetailViewWidth, kHistoryTableRowHeight*kMaxHistoryTableRowCount + kStatusBarHe
 @property (nonatomic, strong) UIImageView *statusBarBackgroundImageView;
 @property (nonatomic, strong) UILabel *statusLabel1;
 @property (nonatomic, strong) UILabel *statusLabel2;
-@property (nonatomic, unsafe_unretained) UILabel *hiddenStatusLabel;
-@property (unsafe_unretained, nonatomic, readonly) UILabel *visibleStatusLabel;
+@property (nonatomic, weak) UILabel *hiddenStatusLabel;
+@property (weak, nonatomic, readonly) UILabel *visibleStatusLabel;
 @property (nonatomic, strong) UIImageView *progressView;
 @property (nonatomic, assign) CGRect oldBackgroundViewFrame;
 // overwrite property for read-write-access
